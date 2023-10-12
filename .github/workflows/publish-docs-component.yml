@@ -84,15 +84,15 @@ jobs:
       #          export GITHUB_REF_NAME=${{ env.BUMP_VERSION }}
       #          deploy-docs
       #      fi
-      - name: Upload components to component service
-        uses: espressif/upload-components-ci-action@v1
-        with:
-          directories: >
-            components/asio;
-            components/esp_modem;
-            components/esp_mqtt_cxx;
-            components/esp_websocket_client;
-            components/mdns;
-            components/console_simple_init;
-          namespace: "espressif"
-          api_token: ${{ secrets.IDF_COMPONENT_API_TOKEN }}
+      #- name: Upload components to component service
+      #  uses: espressif/upload-components-ci-action@v1
+      #  with:
+      #    directories: >
+      #      components/asio;
+      #      components/esp_modem;
+      #      components/esp_mqtt_cxx;
+      #      components/esp_websocket_client;
+      #      components/mdns;
+      #      components/console_simple_init;
+      #    namespace: "espressif"
+      #    api_token: ${{ secrets.IDF_COMPONENT_API_TOKEN }}
